@@ -1,0 +1,45 @@
+.shell { --ink: #f3eddc; --muted: #a6b5b6; --line: #c6dcdb26; --lime: #d7ef5c; color: var(--ink); min-height: 100vh; padding: 0 clamp(18px, 5vw, 80px) 32px; background: radial-gradient(ellipse at 15% 0, #25404077, transparent 65%), #071219; }
+.header { min-height: 84px; display: flex; align-items: center; gap: 28px; border-bottom: 1px solid var(--line); }
+.header > a { font: 36px Impact, Haettenschweiler, sans-serif; }
+.header a { color: inherit; text-decoration: none; }
+.header i { font: 12px Bahnschrift, sans-serif; background: var(--lime); color: #10211b; padding: 4px; }
+.header > span { font-size: 10px; letter-spacing: .16em; color: var(--lime); }
+.header nav { margin-left: auto; display: flex; gap: 20px; font-size: 12px; }
+.intro { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-top: 36px; }
+.intro p { color: var(--lime); font-size: 10px; letter-spacing: .2em; }
+.intro h1 { font: clamp(40px, 6vw, 74px)/1 Impact, Haettenschweiler, sans-serif; margin: 8px 0; }
+.intro h1 span { color: var(--lime); }
+.connection { color: #ffbb9c; font-size: 11px; letter-spacing: .08em; text-align: right; }
+.connection[data-connected=true] { color: var(--lime); }
+.connection small { display: block; color: var(--muted); font-size: 10px; margin-top: 9px; }
+.note, .settings p { color: var(--muted); font-size: 12px; line-height: 1.7; }
+.note { margin: 20px 0 28px; }
+.error { color: #ffc8b8; border-left: 3px solid #ff644a; background: #3a201d; padding: 15px; font-size: 13px; }
+.board { border-block: 1px solid var(--line); background: linear-gradient(100deg, #431e242e, transparent 40%, #123c552e); padding: 20px 24px 25px; }
+.phase { display: flex; justify-content: space-between; color: var(--lime); font-size: 11px; letter-spacing: .12em; }
+.scores { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; align-items: center; text-align: center; padding: 25px 0; }
+.scores h2 { font: clamp(20px, 3vw, 38px) Impact, Haettenschweiler, sans-serif; margin: 0; }
+.scores strong { font: clamp(45px, 8vw, 100px)/1.2 Impact, Haettenschweiler, sans-serif; font-variant-numeric: tabular-nums; }
+.scores p { color: var(--muted); font-size: 10px; }
+.ronaldo { color: #ff9d88; }
+.messi { color: #8ddcff; }
+.clock { display: grid; gap: 8px; }
+.clock strong { font-size: clamp(35px, 6vw, 70px); }
+.clock small { font-size: 9px; color: var(--muted); letter-spacing: .1em; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 10px; }
+.shell button { background: #142c35; color: var(--ink); border: 1px solid #87a6b355; padding: 11px 17px; border-radius: 3px; cursor: pointer; font-size: 12px; }
+.shell button:hover:enabled { border-color: var(--lime); }
+.shell button:disabled { opacity: .35; cursor: default; }
+.result { color: var(--lime); text-align: center; font: 32px Impact, Haettenschweiler, sans-serif; }
+.settings { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 5vw, 80px); margin-top: 30px; }
+.settings h2 { font: 25px Impact, Haettenschweiler, sans-serif; margin: 12px 0; }
+.settings fieldset { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; padding: 0; border: 0; margin: 20px 0; }
+.settings label { display: grid; gap: 6px; color: var(--muted); font-size: 11px; }
+.settings input, .settings select { min-width: 0; width: 100%; color: var(--ink); background: #10242e; border: 1px solid var(--line); border-radius: 3px; padding: 10px; font: inherit; }
+.settings select:focus-visible { outline: 2px solid var(--lime); }
+.timerForm { display: flex; align-items: end; gap: 10px; margin: 20px 0 30px; }
+.timerForm label { flex: 1; }
+.results { list-style: none; padding: 0; }
+.results li { display: flex; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--line); padding: 12px 0; font-size: 12px; }
+.footer { color: var(--muted); font-size: 10px; line-height: 1.8; overflow-wrap: anywhere; margin-top: 36px; border-top: 1px solid var(--line); padding-top: 20px; }
+@media (max-width: 650px) { .header { flex-wrap: wrap; gap: 14px; padding: 16px 0; } .header nav { width: 100%; margin-left: 0; } .intro { align-items: start; flex-direction: column; } .connection { text-align: left; } .settings { grid-template-columns: 1fr; } .board { padding: 18px 10px; } .scores { gap: 8px; } .scores p { font-size: 8px; line-height: 1.6; } }

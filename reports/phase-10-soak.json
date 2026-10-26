@@ -1,0 +1,220 @@
+{
+  "status": "PASS",
+  "startedAt": "2026-10-24T03:24:39.632Z",
+  "finishedAt": "2026-10-24T03:34:39.832Z",
+  "requestedSeconds": 600,
+  "elapsedSeconds": 600.2,
+  "targetIntervalMs": 200,
+  "requests": 4238,
+  "duplicateReplays": 587,
+  "reconnects": 4,
+  "restarts": 2,
+  "expected": {
+    "ronaldo": 7310,
+    "messi": 21900,
+    "gifts": 2921,
+    "likes": 7300
+  },
+  "snapshotCounts": [
+    18436,
+    18428
+  ],
+  "ackMs": {
+    "p50": 34.96,
+    "p95": 74.33,
+    "max": 190.26
+  },
+  "eventLoopMs": {
+    "p95": 57.11,
+    "max": 190.71
+  },
+  "samples": [
+    {
+      "elapsedSeconds": 0.05,
+      "requests": 0,
+      "rssMiB": 85.41,
+      "heapMiB": 23.59,
+      "snapshotBytes": 3715
+    },
+    {
+      "elapsedSeconds": 30.21,
+      "requests": 216,
+      "rssMiB": 111.79,
+      "heapMiB": 32.37,
+      "snapshotBytes": 167898
+    },
+    {
+      "elapsedSeconds": 60.07,
+      "requests": 430,
+      "rssMiB": 145.81,
+      "heapMiB": 46.52,
+      "snapshotBytes": 259046
+    },
+    {
+      "elapsedSeconds": 90.15,
+      "requests": 644,
+      "rssMiB": 147.29,
+      "heapMiB": 51.19,
+      "snapshotBytes": 350957
+    },
+    {
+      "elapsedSeconds": 120.1,
+      "requests": 857,
+      "rssMiB": 170.16,
+      "heapMiB": 28.32,
+      "snapshotBytes": 442536
+    },
+    {
+      "elapsedSeconds": 150.08,
+      "requests": 1071,
+      "rssMiB": 202.15,
+      "heapMiB": 45.43,
+      "snapshotBytes": 534384
+    },
+    {
+      "elapsedSeconds": 180.16,
+      "requests": 1286,
+      "rssMiB": 150.72,
+      "heapMiB": 75.64,
+      "snapshotBytes": 626281
+    },
+    {
+      "elapsedSeconds": 210.01,
+      "requests": 1493,
+      "rssMiB": 211.7,
+      "heapMiB": 120.79,
+      "snapshotBytes": 714311
+    },
+    {
+      "elapsedSeconds": 240.14,
+      "requests": 1704,
+      "rssMiB": 254.58,
+      "heapMiB": 40.61,
+      "snapshotBytes": 805115
+    },
+    {
+      "elapsedSeconds": 270.13,
+      "requests": 1918,
+      "rssMiB": 265.87,
+      "heapMiB": 56.02,
+      "snapshotBytes": 896774
+    },
+    {
+      "elapsedSeconds": 300.05,
+      "requests": 2130,
+      "rssMiB": 269.11,
+      "heapMiB": 69.72,
+      "snapshotBytes": 986689
+    },
+    {
+      "elapsedSeconds": 330.21,
+      "requests": 2341,
+      "rssMiB": 278.3,
+      "heapMiB": 106.87,
+      "snapshotBytes": 1078054
+    },
+    {
+      "elapsedSeconds": 360.18,
+      "requests": 2551,
+      "rssMiB": 260.51,
+      "heapMiB": 55.35,
+      "snapshotBytes": 1167630
+    },
+    {
+      "elapsedSeconds": 390.18,
+      "requests": 2762,
+      "rssMiB": 264.59,
+      "heapMiB": 96.71,
+      "snapshotBytes": 1257320
+    },
+    {
+      "elapsedSeconds": 420.05,
+      "requests": 2963,
+      "rssMiB": 282.94,
+      "heapMiB": 110.86,
+      "snapshotBytes": 1343725
+    },
+    {
+      "elapsedSeconds": 450.12,
+      "requests": 3175,
+      "rssMiB": 292.58,
+      "heapMiB": 51.44,
+      "snapshotBytes": 1433621
+    },
+    {
+      "elapsedSeconds": 480.14,
+      "requests": 3387,
+      "rssMiB": 290.49,
+      "heapMiB": 119.73,
+      "snapshotBytes": 1525168
+    },
+    {
+      "elapsedSeconds": 510.09,
+      "requests": 3601,
+      "rssMiB": 299.09,
+      "heapMiB": 169.58,
+      "snapshotBytes": 1616864
+    },
+    {
+      "elapsedSeconds": 540.02,
+      "requests": 3814,
+      "rssMiB": 296.82,
+      "heapMiB": 88.56,
+      "snapshotBytes": 1707480
+    },
+    {
+      "elapsedSeconds": 570.12,
+      "requests": 4024,
+      "rssMiB": 294.66,
+      "heapMiB": 45.44,
+      "snapshotBytes": 1798139
+    },
+    {
+      "elapsedSeconds": 600.17,
+      "requests": 4238,
+      "rssMiB": 307.15,
+      "heapMiB": 77.85,
+      "snapshotBytes": 1888905
+    }
+  ],
+  "milestones": [
+    {
+      "elapsedSeconds": 120.0472765,
+      "action": "overlay reconnect",
+      "status": "PASS"
+    },
+    {
+      "elapsedSeconds": 200.0240646,
+      "action": "server restart, PAUSED restore, resume, duplicate replay",
+      "status": "PASS"
+    },
+    {
+      "elapsedSeconds": 240.0607127,
+      "action": "overlay reconnect",
+      "status": "PASS"
+    },
+    {
+      "elapsedSeconds": 360.11064150000004,
+      "action": "overlay reconnect",
+      "status": "PASS"
+    },
+    {
+      "elapsedSeconds": 400.1468133,
+      "action": "server restart, PAUSED restore, resume, duplicate replay",
+      "status": "PASS"
+    },
+    {
+      "elapsedSeconds": 480.08235840000003,
+      "action": "overlay reconnect",
+      "status": "PASS"
+    },
+    {
+      "action": "round and match result",
+      "status": "PASS",
+      "winner": "messi"
+    }
+  ],
+  "snapshotPath": "C:\\3d\\data\\phase-10-soak-6e65af70-94dd-4288-9125-eb7eded66285\\state.json",
+  "failure": null,
+  "scope": "Isolated local Mock backend + two Socket.IO clients, real wall clock and disk persistence. No TikTok connection, WebGL, audio, OBS or LIVE Studio. Memory includes the server AND test clients; retained dedupe ledger grows during the match. A bounded run cannot prove absence of leaks."
+}

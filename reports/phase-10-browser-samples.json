@@ -1,0 +1,26 @@
+{
+  "scope": "Browser Control preview during isolated Mock soak; samples are not LIVE Studio/OBS encoder FPS or GPU-memory measurements.",
+  "samples": [
+    {
+      "time": "2026-10-24T03:28:44.343Z",
+      "alerts": [],
+      "metrics": "35 FPS / low110 calls / 155.179 trianglesREV 11024 / Preview GPU only",
+      "score": "CR7 3000PLAYINGROUND 1 / 1   55:578970 M10",
+      "visibility": "visible"
+    },
+    {
+      "time": "2026-10-24T03:29:08.093Z",
+      "alerts": [],
+      "metrics": "35 FPS / low108 calls / 155.019 trianglesREV 12089 / Preview GPU only",
+      "score": "CR7 3290PLAYINGROUND 1 / 1   55:339840 M10",
+      "visibility": "visible"
+    },
+    {
+      "time": "2026-10-24T03:31:17.338Z",
+      "alerts": [],
+      "metrics": "45 FPS / low106 calls / 154.859 trianglesREV 17822 / Preview GPU only",
+      "score": "CR7 4850PLAYINGROUND 1 / 1   53:2414550 M10",
+      "visibility": "visible"
+    }
+  ]
+}

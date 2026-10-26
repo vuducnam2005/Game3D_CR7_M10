@@ -1,0 +1,13 @@
+{
+  "rounds": 1,
+  "roundSeconds": 120,
+  "simpleMode": true,
+  "unlimitedTime": false,
+  "ronaldoSpeed": 1,
+  "messiSpeed": 1,
+  "countdownSeconds": 0,
+  "roundBreakSeconds": 0,
+  "tieBreaker": "draw",
+  "overtimeSeconds": 30,
+  "maxOvertimeRounds": 3
+}

@@ -1,0 +1,11 @@
+node_modules/
+dist/
+*.tsbuildinfo
+data/
+*.log
+.env
+.env.*
+!.env.example
+
+# Historical model with no identified author or license; keep out of public distributions.
+public/models/ronaldo_rigged.glb

@@ -1,0 +1,55 @@
+{
+  "checkedAt": "2026-10-24T03:30:51.406Z",
+  "url": "http://127.0.0.1:5176",
+  "localPassed": false,
+  "checks": [
+    {
+      "name": "Persistence health",
+      "status": "FAIL",
+      "detail": "fetch failed"
+    },
+    {
+      "name": "Shared game snapshot",
+      "status": "FAIL",
+      "detail": "fetch failed"
+    },
+    {
+      "name": "Route /control",
+      "status": "FAIL",
+      "detail": "fetch failed"
+    },
+    {
+      "name": "Route /overlay",
+      "status": "FAIL",
+      "detail": "fetch failed"
+    },
+    {
+      "name": "Route /debug",
+      "status": "FAIL",
+      "detail": "fetch failed"
+    },
+    {
+      "name": "GLB cristiano_ronaldo.glb",
+      "status": "FAIL",
+      "detail": "fetch failed"
+    },
+    {
+      "name": "GLB messi_2023_3d_free.glb",
+      "status": "FAIL",
+      "detail": "fetch failed"
+    }
+  ],
+  "live": {
+    "configured": false,
+    "status": "UNKNOWN",
+    "numericGiftMappings": 0,
+    "audioMuted": null,
+    "pending": [
+      "Add observed TikTok numeric gift IDs; rose/cookie/trophy are Mock IDs",
+      "Set TIKTOK_ENABLED and your public TIKTOK_USERNAME in .env, restart, then Connect",
+      "Verify an actual LIVE session and real events",
+      "Verify LIVE Studio picture and sound on the receiving phone"
+    ]
+  },
+  "note": "Read-only check. Does not connect TikTok, start a match or broadcast. Local PASS does not mean real LIVE acceptance."
+}

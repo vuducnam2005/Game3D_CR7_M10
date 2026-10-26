@@ -1,0 +1,45 @@
+.page { min-height: 100dvh; padding: 0 clamp(18px, 4vw, 64px) 64px; color: #f4f0e4; background: #091821; font-family: Bahnschrift, 'Segoe UI', sans-serif; }
+.header { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px; border-bottom: 1px solid #ffffff2b; }
+.header a { color: inherit; text-decoration: none; }
+.logo { font: 30px Impact, sans-serif; white-space: nowrap; }
+.logo span { font: 15px Bahnschrift, sans-serif; color: #d7ef5c; }
+.header nav { display: flex; flex-wrap: wrap; gap: 24px; font-size: 14px; }
+.header nav a:hover { color: #d7ef5c; }
+.heading { margin: 42px 0 28px; }
+.heading h1 { font: clamp(38px, 5vw, 62px)/1 Impact, sans-serif; margin: 0 0 12px; }
+.heading p, .settings p { color: #b6c9ce; line-height: 1.5; }
+.scoreboard { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; padding: 20px clamp(16px, 3vw, 36px); background: linear-gradient(100deg, #512925, #10212b 48%, #173b50); border: 1px solid #ffffff36; }
+.scoreboard > div { display: grid; gap: 3px; }
+.scoreboard > div:last-child { text-align: right; }
+.scoreboard span { font-size: 14px; font-weight: 700; }
+.scoreboard strong { font: clamp(45px, 8vw, 90px)/1.05 Impact, sans-serif; font-variant-numeric: tabular-nums; }
+.scoreboard small { color: #bed0d5; font-size: 12px; }
+.scoreboard > div:first-child strong { color: #ff9b84; }
+.scoreboard > div:last-child strong { color: #8cdbfa; }
+.scoreboard .clock { text-align: center; place-content: center; }
+.clock strong { color: #e5f29e; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 44px; }
+.giftTest { display: grid; grid-template-columns: minmax(200px, 1fr) minmax(320px, 2fr); gap: 42px; padding: 22px 0 30px; border-top: 1px solid #ffffff2b; }
+.giftTest h2 { font: 30px Impact, sans-serif; margin: 0 0 8px; }
+.giftTest p { color: #b6c9ce; line-height: 1.5; margin: 0; }
+.giftButtons { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: center; }
+.giftButtons button { min-height: 56px; text-align: left; }
+.giftButtons button:first-child { border-color: #ff8d75; }
+.giftButtons button:last-child { border-color: #75d8ff; }
+.giftButtons b { display: block; margin-top: 4px; color: #d7ef5c; font-size: 12px; }
+.giftResult { grid-column: 2; color: #d7ef5c; font-size: 13px; }
+.page button { min-height: 44px; padding: 10px 18px; color: #f4f0e4; background: #173341; border: 1px solid #78919b; border-radius: 4px; font: 600 14px Bahnschrift, 'Segoe UI', sans-serif; cursor: pointer; }
+.page button.primary { color: #102019; background: #d7ef5c; border-color: #d7ef5c; }
+.page button:hover:enabled { filter: brightness(1.15); }
+.page button:disabled { opacity: .4; cursor: default; }
+.settings { display: grid; grid-template-columns: minmax(200px, 1fr) minmax(320px, 2fr); gap: 42px; padding-top: 28px; border-top: 1px solid #ffffff2b; }
+.settings h2 { font: 30px Impact, sans-serif; margin: 0 0 8px; }
+.settings p { margin: 0; font-size: 14px; }
+.settings fieldset { border: 0; padding: 0; min-width: 0; display: grid; grid-template-columns: 1fr 1fr; align-items: end; gap: 18px; }
+.settings label { display: grid; gap: 8px; color: #cedde0; font-size: 14px; }
+.settings label b { color: #d7ef5c; }
+.settings input:not([type=range]), .settings select { width: 100%; min-height: 42px; color: #f4f0e4; background: #173341; border: 1px solid #78919b; border-radius: 4px; padding: 8px 10px; font: inherit; }
+.settings input[type=range] { width: 100%; accent-color: #d7ef5c; }
+.page :focus-visible { outline: 3px solid #d7ef5c; outline-offset: 3px; }
+.error { color: #ffb7a7; padding: 12px; background: #4d2928; }
+@media (max-width: 720px) { .header { align-items: start; flex-direction: column; padding: 16px 0; } .heading { margin-top: 30px; } .settings, .giftTest { grid-template-columns: 1fr; gap: 22px; } .settings fieldset, .giftButtons { grid-template-columns: 1fr; } .giftResult { grid-column: 1; } .scoreboard { padding: 16px; } .scoreboard span { font-size: 12px; } .scoreboard small { font-size: 10px; } }

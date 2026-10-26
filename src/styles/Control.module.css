@@ -1,0 +1,23 @@
+.shell > header { min-height: 64px; }
+.shell > section:first-of-type { margin-top: 20px; }
+.shell h1 { font-size: clamp(40px, 5vw, 54px); }
+.shell > p { margin-block: 14px; }
+.battle { display: grid; grid-template-columns: minmax(0, 1fr) 400px; gap: 32px; padding-top: 24px; align-items: start; }
+.preview { min-width: 0; padding: 20px; background: repeating-conic-gradient(#182b35 0% 25%, #11212b 0% 50%) 0 0 / 24px 24px; border: 1px solid #c6dcdb26; }
+.preview > div { max-width: 340px; margin: auto; }
+.debug { color: #b8cdd0; display: flex; flex-wrap: wrap; gap: 15px; font-size: 11px; padding-top: 14px; }
+.settings { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; padding: 30px 0; border-bottom: 1px solid #c6dcdb26; }
+.settings fieldset { border: 0; padding: 0; min-width: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 18px 0; align-items: end; }
+.settings .check { display: flex; align-items: center; gap: 8px; min-height: 34px; }
+.settings form > button { margin-top: 10px; }
+.settings .animations { display: flex; flex-wrap: wrap; gap: 8px; }
+.settings .animations button { padding: 9px 12px; }
+.connectionPanel { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 24px; padding: 24px; border: 1px solid #c6dcdb26; background: #10232d; margin: 20px 0; overflow-wrap: anywhere; }
+.connectionPanel h2 { margin-top: 0; }
+.connectionPanel h2 small { display: inline-block; color: #a7ef77; font-size: 12px; margin-left: 10px; }
+.connectionPanel p { color: #b8cdd0; font-size: 13px; line-height: 1.6; }
+.connectionActions { display: flex; flex-direction: column; justify-content: center; gap: 12px; }
+.connectionActions small { color: #b8cdd0; line-height: 1.6; }
+@media (max-width: 800px) { .connectionPanel { grid-template-columns: 1fr; padding: 16px; } }
+@media (max-width: 1100px) { .battle { grid-template-columns: minmax(0, 1fr) 320px; gap: 20px; } .settings { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 800px) { .battle, .settings { grid-template-columns: 1fr; } .preview { padding: 10px; } }

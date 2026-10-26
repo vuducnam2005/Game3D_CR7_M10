@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "startedAt": "2026-10-24T03:24:03.539Z",
+  "finishedAt": "2026-10-24T03:24:18.784Z",
+  "requestedSeconds": 15,
+  "elapsedSeconds": 15.25,
+  "targetIntervalMs": 200,
+  "requests": 95,
+  "duplicateReplays": 15,
+  "reconnects": 4,
+  "restarts": 2,
+  "expected": {
+    "ronaldo": 160,
+    "messi": 480,
+    "gifts": 64,
+    "likes": 160
+  },
+  "snapshotCounts": [
+    426,
+    421
+  ],
+  "ackMs": {
+    "p50": 4.49,
+    "p95": 9.27,
+    "max": 10.99
+  },
+  "eventLoopMs": {
+    "p95": 31.59,
+    "max": 34.73
+  },
+  "samples": [
+    {
+      "elapsedSeconds": 0.06,
+      "requests": 0,
+      "rssMiB": 100.13,
+      "heapMiB": 23.86,
+      "snapshotBytes": 3716
+    },
+    {
+      "elapsedSeconds": 15.24,
+      "requests": 95,
+      "rssMiB": 122.17,
+      "heapMiB": 33.95,
+      "snapshotBytes": 96537
+    }
+  ],
+  "milestones": [
+    {
+      "elapsedSeconds": 3.1181525,
+      "action": "overlay reconnect",
+      "status": "PASS"
+    },
+    {
+      "elapsedSeconds": 5.1393043,
+      "action": "server restart, PAUSED restore, resume, duplicate replay",
+      "status": "PASS"
+    },
+    {
+      "elapsedSeconds": 6.434187,
+      "action": "overlay reconnect",
+      "status": "PASS"
+    },
+    {
+      "elapsedSeconds": 9.0631468,
+      "action": "overlay reconnect",
+      "status": "PASS"
+    },
+    {
+      "elapsedSeconds": 10.083857100000001,
+      "action": "server restart, PAUSED restore, resume, duplicate replay",
+      "status": "PASS"
+    },
+    {
+      "elapsedSeconds": 12.1592859,
+      "action": "overlay reconnect",
+      "status": "PASS"
+    },
+    {
+      "action": "round and match result",
+      "status": "PASS",
+      "winner": "messi"
+    }
+  ],
+  "snapshotPath": "C:\\3d\\data\\phase-10-soak-fe18d1f0-3f56-4475-9823-3ba6c7e3e5ec\\state.json",
+  "failure": null,
+  "scope": "Isolated local Mock backend + two Socket.IO clients, real wall clock and disk persistence. No TikTok connection, WebGL, audio, OBS or LIVE Studio. Memory includes the server AND test clients; retained dedupe ledger grows during the match. A bounded run cannot prove absence of leaks."
+}

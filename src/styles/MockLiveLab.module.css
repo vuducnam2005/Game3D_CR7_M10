@@ -1,0 +1,49 @@
+.shell { padding-inline: clamp(16px, 3vw, 48px); }
+.shell a { color: #d7ef5c; }
+.shell h2 { font: 28px Impact, Haettenschweiler, sans-serif; margin: 15px 0; }
+.shell h3 { font-size: 11px; letter-spacing: .12em; color: #c8df91; margin: 22px 0 10px; }
+.shell p { color: #a6b5b6; font-size: 12px; line-height: 1.6; }
+.scorebar { display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center; border-block: 1px solid #c6dcdb26; padding: 17px 20px; background: linear-gradient(100deg, #792e2e40, #071219, #12658840); }
+.scorebar > span { font: 20px Impact, sans-serif; color: #ff9d88; }
+.scorebar > span:last-child { color: #8ddcff; text-align: right; }
+.scorebar b { font-size: 42px; margin-inline: 12px; }
+.scorebar > div { text-align: center; font-size: 12px; color: #e2efac; }
+.scorebar small { display: block; margin-top: 7px; font-size: 10px; color: #a6b5b6; }
+.battle { display: grid; grid-template-columns: minmax(0, 1fr) 360px; align-items: start; border-bottom: 1px solid #c6dcdb26; }
+.preview { min-width: 0; }
+.preview > div { min-height: 0; }
+.preview section { height: 720px; min-height: 0; }
+.desk { border-left: 1px solid #c6dcdb26; padding: 10px 0 25px 24px; }
+.desk > div { justify-content: flex-start; }
+.identity { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0; }
+.shell label { display: grid; gap: 6px; font-size: 11px; color: #a6b5b6; }
+.shell input, .shell select { width: 100%; min-width: 0; padding: 9px; font: inherit; color: #f3eddc; background: #10242e; border: 1px solid #c6dcdb26; border-radius: 3px; }
+.shell input[type=checkbox] { width: auto; }
+.shell select:focus-visible { outline: 2px solid #d7ef5c; }
+.gifts { display: grid; gap: 10px; }
+.gifts > div { border-left: 2px solid #ff6248; padding-left: 9px; display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
+.gifts > div[data-team=messi] { border-color: #59ceff; }
+.gifts span { font-size: 13px; flex: 1 0 100%; }
+.gifts small { color: #a6b5b6; font-size: 9px; margin-left: 8px; }
+.custom { display: grid; grid-template-columns: 1fr 60px auto; gap: 8px; align-items: end; margin: 20px 0; }
+.ack { display: block; padding: 12px; margin-top: 15px; color: #d7ef5c; background: #1b3325; font-size: 12px; }
+.ack small { display: block; margin-top: 5px; color: #a6b5b6; overflow-wrap: anywhere; }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 30px 0; }
+.stats > div { border-bottom: 1px solid #c6dcdb26; padding-bottom: 20px; }
+.stats span { display: block; font-size: 10px; color: #a6b5b6; }
+.stats b { font: 32px Impact, sans-serif; display: block; margin-top: 9px; }
+.history { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 35px; }
+.history ol { list-style: none; padding: 0; }
+.history li { padding: 10px 0; border-bottom: 1px solid #c6dcdb26; display: flex; justify-content: space-between; gap: 12px; font-size: 12px; overflow-wrap: anywhere; }
+.history li small { display: block; color: #a6b5b6; margin-top: 5px; font-size: 11px; }
+.history li b { white-space: nowrap; }
+.eventLog { max-height: 350px; overflow-y: auto; }
+.mapping { border-top: 1px solid #c6dcdb26; margin-top: 30px; padding-top: 20px; }
+.mapping fieldset { border: 0; padding: 0; min-width: 0; }
+.rules { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; margin: 20px 0; }
+.rules label:has([type=checkbox]) { display: flex; align-items: center; }
+.mappingRows { display: grid; gap: 14px; }
+.mappingRow { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; border: 1px solid #c6dcdb26; padding: 16px; }
+.mappingRow button { align-self: end; }
+@media (max-width: 1100px) { .battle { grid-template-columns: minmax(0, 1fr) 320px; } .desk { padding-left: 16px; } .preview section { aspect-ratio: 9/16; height: auto; } }
+@media (max-width: 800px) { .battle { grid-template-columns: 1fr; } .desk { border-left: 0; padding-left: 0; } .preview section { height: auto; aspect-ratio: 9/16; } .history { grid-template-columns: 1fr; gap: 10px; } .stats { grid-template-columns: 1fr 1fr; } .mappingRow { grid-template-columns: 1fr 1fr; } .scorebar { padding-inline: 8px; gap: 5px; } .scorebar b { margin-inline: 4px; font-size: 32px; } .scorebar > span { font-size: 17px; } }

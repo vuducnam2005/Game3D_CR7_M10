@@ -1,0 +1,65 @@
+{
+  "checkedAt": "2026-10-26T03:42:15.758Z",
+  "url": "http://localhost:5173",
+  "localPassed": true,
+  "checks": [
+    {
+      "name": "Persistence health",
+      "status": "PASS",
+      "detail": "ok"
+    },
+    {
+      "name": "Shared game snapshot",
+      "status": "PASS",
+      "detail": {
+        "status": "PLAYING",
+        "rounds": 1,
+        "roundSeconds": 120,
+        "source": "MOCK"
+      }
+    },
+    {
+      "name": "Route /control",
+      "status": "PASS",
+      "detail": "Application HTML served; WebGL needs a visual check"
+    },
+    {
+      "name": "Route /overlay",
+      "status": "PASS",
+      "detail": "Application HTML served; WebGL needs a visual check"
+    },
+    {
+      "name": "Route /debug",
+      "status": "PASS",
+      "detail": "Application HTML served; WebGL needs a visual check"
+    },
+    {
+      "name": "GLB cristiano_ronaldo.glb",
+      "status": "PASS",
+      "detail": {
+        "bytes": 16139240
+      }
+    },
+    {
+      "name": "GLB messi_2023_3d_free.glb",
+      "status": "PASS",
+      "detail": {
+        "bytes": 10881188
+      }
+    }
+  ],
+  "live": {
+    "configured": false,
+    "status": "UNCONFIGURED",
+    "simpleGiftFallback": true,
+    "numericGiftMappings": 0,
+    "audioMuted": true,
+    "pending": [
+      "Verify the TikTok gift names arrive as Flower/Rose and Cookie; add an explicit mapping if a room uses different names",
+      "Set TIKTOK_ENABLED and your public TIKTOK_USERNAME in .env, restart, then Connect",
+      "Verify an actual LIVE session and real events",
+      "Verify LIVE Studio picture and sound on the receiving phone"
+    ]
+  },
+  "note": "Read-only check. Does not connect TikTok, start a match or broadcast. Local PASS does not mean real LIVE acceptance."
+}

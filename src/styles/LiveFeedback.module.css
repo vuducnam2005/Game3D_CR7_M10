@@ -1,0 +1,22 @@
+.layer { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.celebration { --glow: #ff6248; position: absolute; inset: 0 50% 0 0; display: flex; align-items: center; flex-direction: column; justify-content: end; padding-bottom: 140px; text-shadow: 0 2px 12px #001; }
+.celebration[data-team=messi] { --glow: #59ceff; inset: 0 0 0 50%; }
+.celebration[data-effect=red] { --glow: #ff6248; }
+.celebration[data-effect=blue] { --glow: #59ceff; }
+.celebration[data-effect=gold] { --glow: #ffd665; }
+.celebration strong { font: clamp(19px, 3vw, 40px) Impact, sans-serif; color: var(--glow); z-index: 1; }
+.celebration b { padding: 5px 10px; color: #fff4cf; font-size: clamp(11px, 2vw, 22px); z-index: 1; }
+.celebration small { font-size: 10px; color: white; z-index: 1; }
+.aura { position: absolute; inset: 25% 5% 0; background: radial-gradient(ellipse at 50% 85%, color-mix(in srgb, var(--glow) 35%, transparent), transparent 65%); animation: arrive .5s ease-out both; }
+.celebration[data-effect=none] .aura { display: none; }
+.celebration[data-tier="5"] b { border-bottom: 2px solid var(--glow); }
+.celebration[data-tier="10"] b { background: color-mix(in srgb, var(--glow) 30%, #071219); border-inline: 2px solid var(--glow); }
+.celebration[data-tier="20"] b { color: #172124; background: #fff1a3; box-shadow: 0 0 24px var(--glow); }
+.celebration[data-tier="20"] .aura { background: radial-gradient(ellipse at 50% 85%, color-mix(in srgb, var(--glow) 60%, transparent), transparent 75%); }
+.notices { position: absolute; top: 24%; left: 12%; right: 12%; display: grid; gap: 8px; }
+.notices > div { display: flex; align-items: center; justify-content: center; gap: 10px; background: #0c1c26de; padding: 10px 14px; border: 1px solid #e5dd8c; color: #ffe6a3; font-size: 12px; overflow-wrap: anywhere; animation: arrive .25s ease-out both; }
+.notices > div[data-team=messi] { border-color: #59ceff; }
+.notices > div[data-team=ronaldo] { border-color: #ff6248; }
+@keyframes arrive { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 650px) { .celebration { padding-bottom: 26%; } .notices { top: 3%; left: 5%; right: 5%; } }
+@media (prefers-reduced-motion: reduce) { .aura, .notices > div { animation: none; } }
