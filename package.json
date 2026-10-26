@@ -28,7 +28,11 @@
     "socket.io-client": "^4.8.4",
     "three": "latest",
     "tiktok-live-connector": "2.5.0",
+    "tsx": "^4.23.15",
     "zod": "^4.6.7"
+  },
+  "overrides": {
+    "body-parser": "^2.4.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "latest",
@@ -41,7 +45,6 @@
     "@vitejs/plugin-react": "latest",
     "concurrently": "^10.0.6",
     "jsdom": "latest",
-    "tsx": "^4.23.15",
     "typescript": "latest",
     "vite": "latest",
     "vitest": "latest"

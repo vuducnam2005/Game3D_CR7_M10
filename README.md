@@ -4,6 +4,8 @@ Da hoan thanh Giai doan 9 va ban giao phien ban local/Mock ngay 2026-10-24. Yeu 
 
 ## Chay tren Windows
 
+Chay tren may chu Docker: xem [deploy/README.md](deploy/README.md). Ban Docker phuc vu production build qua Caddy va luu snapshot trong Docker volume; truy cap tu may phat LIVE qua SSH tunnel.
+
 Yeu cau Node.js 24 LTS (da thu voi 24.15.0) va npm.
 
 ```powershell

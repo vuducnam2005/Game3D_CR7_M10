@@ -1,0 +1,39 @@
+services:
+  game:
+    build:
+      context: .
+      target: game
+    environment:
+      GAME_PORT: "3001"
+      GAME_HOST: 0.0.0.0
+      GAME_SNAPSHOT_PATH: /app/data/game-state.json
+      TIKTOK_ENABLED: ${TIKTOK_ENABLED:-false}
+      TIKTOK_USERNAME: ${TIKTOK_USERNAME:-}
+      TIKTOK_SIGN_API_KEY: ${TIKTOK_SIGN_API_KEY:-}
+      TIKTOK_CONNECT_TIMEOUT_MS: ${TIKTOK_CONNECT_TIMEOUT_MS:-30000}
+      TIKTOK_RETRY_BASE_MS: ${TIKTOK_RETRY_BASE_MS:-2000}
+      TIKTOK_RETRY_MAX_MS: ${TIKTOK_RETRY_MAX_MS:-60000}
+      TIKTOK_MAX_RETRIES: ${TIKTOK_MAX_RETRIES:-5}
+    volumes:
+      - game-data:/app/data
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3001/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+    restart: unless-stopped
+
+  web:
+    build:
+      context: .
+      target: web
+    ports:
+      - "127.0.0.1:${DEPLOY_PORT:-8080}:80"
+    depends_on:
+      game:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  game-data:

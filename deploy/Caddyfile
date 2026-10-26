@@ -1,0 +1,14 @@
+:80 {
+  encode zstd gzip
+
+  @backend path /api/* /socket.io/*
+  handle @backend {
+    reverse_proxy game:3001
+  }
+
+  handle {
+    root * /srv
+    try_files {path} /index.html
+    file_server
+  }
+}
